@@ -1,0 +1,147 @@
+/* Variáveis CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+
+:root {
+    --cor-fundo: #F6F4EB;
+    --cor-titulo: #4682A9;
+    --cor-texto: #102C57;
+    --cor-borda: #91C8E4;
+    --cor-hover: #FFE5AD;
+
+    --fonte-titulo: 'Merriweather', serif;
+    --fonte-paragrafo: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estrutura da página */
+
+body {
+    background-color: var(--cor-fundo);
+    box-sizing: border-box;
+    color: var(--cor-texto);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+.container {
+    gap: 80px;
+    padding: 10% 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__intro {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.container__intro__nome {
+    font-size: 2.25rem;
+    color: var(--cor-titulo);
+    font-family: var(--fonte-titulo);
+    align-items: center;
+}
+
+.container__intro__sub {
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.5rem;
+    border: 3px solid var(--cor-borda);
+    border-radius: 8px;
+    width: 50%;
+    padding: 15px 0px;
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container__info__conteudo {
+    font-size: 1.6rem;
+}
+
+.container__conteudo__texto {
+    font-size: 1.18rem;
+    font-family: var(--fonte-paragrafo);
+    padding: 0;
+    text-align: center;
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-texto);
+    background-color: var(--cor-borda);
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.container__links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.container__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    padding: 15% 0%;
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-family: var(--fonte-paragrafo);
+    font-weight: 400;
+    border: 2px solid var(--cor-borda);
+}
+
+.container__link__navegacao:hover {
+    background-color: var(--cor-hover);
+}
+
+@media (max-width: 1920px) {
+    .cabecalho {
+        padding: 15%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .container {
+        width: auto;
+    }
+}
